@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Cat_Juegos</string>
+
+    <string name="GAME_ID">game id</string>
+    <string name="Action">Accion</string>
+    <string name="Adventure">Aventura</string>
+    <string name="Fight">Peleas</string>
+
+    <string-array name="Generes">
+        <item>@string/Action</item>
+        <item>@string/Adventure</item>
+        <item>@string/Fight</item>
+    </string-array>
+</resources>
