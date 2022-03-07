@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:hint="Título"
+        android:hint="@string/t_tulo"
         app:boxBackgroundMode="outline"
         app:boxCornerRadiusBottomEnd="16dp"
         app:boxCornerRadiusBottomStart="16dp"
@@ -48,13 +48,42 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilGenere"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/genero"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivHeader"
+        app:layout_constraintVertical_bias="0.50">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#757575">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilDeveloper"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:hint="Desarrollador"
+        android:hint="@string/desarrollador"
         app:boxBackgroundMode="outline"
         app:boxCornerRadiusBottomEnd="16dp"
         app:boxCornerRadiusBottomStart="16dp"
@@ -100,7 +129,7 @@
             android:id="@+id/tietPlayer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Player"
+            android:hint="@string/player"
             android:inputType="number"
             android:textColorHint="#757575" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -110,7 +139,7 @@
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:onClick="click"
-        android:text="Editar"
+        android:text="@string/editar"
         android:textAllCaps="false"
         android:textSize="20sp"
         app:cornerRadius="15dp"
@@ -128,7 +157,7 @@
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:onClick="click"
-        android:text="Borrar"
+        android:text="@string/borrar"
         android:textAllCaps="false"
         android:textSize="20sp"
         app:cornerRadius="15dp"

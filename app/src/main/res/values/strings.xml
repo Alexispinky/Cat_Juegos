@@ -5,8 +5,23 @@
     <string name="Action">Accion</string>
     <string name="Adventure">Aventura</string>
     <string name="Fight">Peleas</string>
+    <string name="NoSelect">Seleccione una opcion</string>
+    <string name="ErrorVacio">Este campo no puede estar vacio</string>
+    <string name="t_tulo">Título</string>
+    <string name="desarrollador">Desarrollador</string>
+    <string name="player">Player</string>
+    <string name="editar">Editar</string>
+    <string name="borrar">Borrar</string>
+    <string name="genero">Genero</string>
+    <string name="agregar">Agregar</string>
+    <string name="ErrorG">Error al guardar el registro</string>
+    <string name="GuardaE">Registro guardado exitosamente</string>
+    <string name="ErrorSpinner">Selecciona algo</string>
+    <string name="ActualizadoE">Registro actualizado exitosamente</string>
+    <string name="ErrorA">Error al actualizar el registro</string>
 
     <string-array name="Generes">
+        <item>@string/NoSelect</item>
         <item>@string/Action</item>
         <item>@string/Adventure</item>
         <item>@string/Fight</item>

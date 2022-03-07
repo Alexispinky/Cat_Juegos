@@ -41,13 +41,20 @@ class GameDetailActivity : AppCompatActivity() {
         if(game != null){
             with(binding){
                 tietTitulo.setText(game?.name)
-                //tietGenre.setText(game?.genre)
+                tietGenre.setText(game?.genre)
                 tietDeveloper.setText(game?.developer)
+                tietPlayer.setText(game?.players.toString())
+                when(game?.genre){
+                    getString(R.string.Action) -> ivHeader.setImageResource(R.drawable.action)
+                    getString(R.string.Adventure) -> ivHeader.setImageResource(R.drawable.adventure)
+                    getString(R.string.Fight) -> ivHeader.setImageResource(R.drawable.fight)
+                }
 
                 //Para que no se abra el teclado al momento de hacer click en los TextInputEditText
                 tietTitulo.inputType = InputType.TYPE_NULL
-                //tietGenre.inputType = InputType.TYPE_NULL
+                tietGenre.inputType = InputType.TYPE_NULL
                 tietDeveloper.inputType = InputType.TYPE_NULL
+                tietPlayer.inputType = InputType.TYPE_NULL
 
             }
         }
